@@ -78,13 +78,13 @@ function Register() {
             })
             .catch(err => { 
                 if (err.response) {
-                    console.error('Server javobi:', err.response.data);  // Serverdan kelgan xatolik
+                    console.error('Server javobi:', err.response.data);  
                     alert(`Error: ${err.response.data.message}`);
                 } else if (err.request) {
-                    console.error('So\'rov yuborildi, ammo javob kelmadi', err.request);  // So'rov yuborildi, lekin javob kelmadi
+                    console.error('So\'rov yuborildi, ammo javob kelmadi', err.request); 
                     alert("No response from server. Please try again later.");
                 } else {
-                    console.error('Xato ro\'y berdi:', err.message);  // Xatolik so'rovni yaratishda
+                    console.error('Xato ro\'y berdi:', err.message);  
                     alert(`Error: ${err.message}`);
                 }
             })
